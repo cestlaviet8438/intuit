@@ -33,6 +33,12 @@ ratatui-macros = "0.6.0"
 serde = { version = "1.0.217", features = ["derive", "rc"] }
 signal-hook = "0.3.17"
 thiserror = "2.0.9"
+time = { version = "0.3.37", features = [
+    "formatting",
+    "parsing",
+    "local-offset",
+    "serde",
+] }
 tokio = { version = "1.42.0", features = ["full", "tracing"] }
 tokio-util = { version = "0.7.13", "features" = ["full", "tracing"] }
 tracing = { version = "0.1.41", features = ["async-await", "log"] }
@@ -44,3 +50,6 @@ tracing-subscriber = { version = "0.3.19", features = [
     "local-time",
     "time",
 ] }
+
+[build-dependencies]
+vergen-gix = { version = "1.0.2", features = ["build", "cargo", "rustc", "si"] }
