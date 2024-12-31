@@ -1,0 +1,12 @@
+[package]
+name = "intuit"
+version = "0.0.1"
+authors = ["(viet) dương trọng việt <cestlaviet8438@gmail.com>"]
+edition = "2021"
+description = "A terminal UI (TUI) framework for developing full-fledged terminal apps!"
+readme = "README.md"
+repository = "https://github.com/cestlaviet8438/intuit/"
+license = "MIT"
+keywords = ["terminal", "tui", "ui-framework", "widgets"]
+
+[dependencies]
